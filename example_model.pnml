@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml xmlns="http://www.laas.fr/tina/TPN.rng">
+ <net id="net1" type="http://www.laas.fr/tina/TPN.rng">
+  <toolspecific tool="Tina" version="3.1.0">
+  </toolspecific>
+   <name>
+    <text>WNTmodel_CadherinPool_US28</text>
+   </name>
+ <page id="page1-net1">
+  <place id="APC">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="985" y="575"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="AXIN">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="985" y="395"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="BCL9">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="880" y="835"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="CADCAT_complex">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="460" y="320"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="CADHERIN">
+   <graphics>
+    <position x="470" y="430"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="CKI">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="985" y="515"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="CTNNA">
+   <graphics>
+    <position x="470" y="495"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="CTNNAB_complex">
+   <graphics>
+    <position x="620" y="390"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="CTNNB1">
+   <graphics>
+    <position x="460" y="725"/>
+    <offset x="-10" y="0" />
+   </graphics>
+  </place>
+  <place id="CTNNB1_Y142">
+   <graphics>
+    <position x="460" y="865"/>
+    <offset x="-10" y="0" />
+   </graphics>
+  </place>
+  <place id="Controller">
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="885" y="50"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="DC">
+   <graphics>
+    <position x="795" y="575"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="DCCTNNB1">
+   <graphics>
+    <position x="795" y="395"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="DVL">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="635" y="295"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="FZD">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="455" y="215"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="GSK3">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="985" y="455"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="HGF">
+   <graphics>
+    <position x="175" y="360"/>
+    <offset x="-10" y="0" />
+   </graphics>
+  </place>
+  <place id="HGFMET">
+   <graphics>
+    <position x="260" y="430"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="LRP">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="545" y="215"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="MET">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="260" y="290"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="METCADCAT">
+   <graphics>
+    <position x="360" y="430"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="RC">
+   <graphics>
+    <position x="975" y="215"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="TC">
+   <graphics>
+    <position x="880" y="685"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="TCFLEF">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="880" y="760"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="TC_Y142">
+   <graphics>
+    <position x="885" y="900"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="US28">
+   <graphics>
+    <position x="30" y="205"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="WNT">
+   <graphics>
+    <position x="545" y="50"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="WNTFZDLRP">
+   <graphics>
+    <position x="635" y="215"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="WNTFZDLRPDVL">
+   <graphics>
+    <position x="795" y="215"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="aNFkB">
+   <graphics>
+    <position x="100" y="285"/>
+    <offset x="-10" y="0" />
+   </graphics>
+  </place>
+  <place id="controller_AJ">
+   <graphics>
+    <position x="560" y="460"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="controller_TC">
+   <graphics>
+    <position x="690" y="800"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="controller_Y142degradation">
+   <graphics>
+    <position x="690" y="590"/>
+    <offset x="0" y="10" />
+   </graphics>
+  </place>
+  <place id="ctnnb1">
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="460" y="595"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="hgf">
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="175" y="230"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="iNFkB">
+   <initialMarking>
+    <text>5</text>
+   </initialMarking>
+   <graphics>
+    <position x="100" y="135"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="nCTNNB1">
+   <graphics>
+    <position x="660" y="725"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="nCTNNB1_Y142">
+   <graphics>
+    <position x="660" y="865"/>
+    <offset x="0" y="-10" />
+   </graphics>
+  </place>
+  <place id="phosphatase">
+   <graphics>
+    <position x="520" y="795"/>
+    <offset x="10" y="0" />
+   </graphics>
+  </place>
+  <place id="reporter">
+   <graphics>
+    <position x="1060" y="795"/>
+    <offset x="-10" y="0" />
+   </graphics>
+  </place>
+  <transition id="t1">
+   <graphics>
+    <position x="545" y="115"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t10">
+   <graphics>
+    <position x="775" y="765"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t11">
+   <graphics>
+    <position x="980" y="685"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t12">
+   <graphics>
+    <position x="360" y="585"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t13">
+   <graphics>
+    <position x="545" y="390"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t14">
+   <graphics>
+    <position x="560" y="750"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t15">
+   <graphics>
+    <position x="560" y="700"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t16">
+   <graphics>
+    <position x="560" y="845"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t17">
+   <graphics>
+    <position x="775" y="905"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t18">
+   <graphics>
+    <position x="980" y="900"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t19">
+   <graphics>
+    <position x="560" y="895"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t2">
+   <graphics>
+    <position x="725" y="295"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t20">
+   <graphics>
+    <position x="175" y="285"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t21">
+   <graphics>
+    <position x="260" y="360"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t22">
+   <graphics>
+    <position x="100" y="205"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t23">
+   <graphics>
+    <position x="775" y="825"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t24">
+   <graphics>
+    <position x="775" y="685"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t25">
+   <graphics>
+    <position x="620" y="495"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t26">
+   <graphics>
+    <position x="460" y="795"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t27">
+   <graphics>
+    <position x="690" y="485"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t28">
+   <graphics>
+    <position x="360" y="245"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t29">
+   <graphics>
+    <position x="175" y="430"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t3">
+   <graphics>
+    <position x="885" y="295"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t4">
+   <graphics>
+    <position x="885" y="115"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t5">
+   <graphics>
+    <position x="885" y="575"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t6">
+   <graphics>
+    <position x="745" y="485"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t7">
+   <graphics>
+    <position x="845" y="485"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t8">
+   <graphics>
+    <position x="885" y="395"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <transition id="t9">
+   <graphics>
+    <position x="460" y="655"/>
+    <offset x="0" y="0" />
+   </graphics>
+  </transition>
+  <arc id="aa0" source="t3" target="RC">
+  </arc>
+  <arc id="aa1" source="Controller" target="t4">
+  </arc>
+  <arc id="aa2" source="t27" target="controller_Y142degradation">
+  </arc>
+  <arc id="aa3" source="t11" target="TC">
+  </arc>
+  <arc id="aa4" source="controller_TC" target="t23">
+  </arc>
+  <arc id="aa5" source="t23" target="controller_TC">
+  </arc>
+  <arc id="aa6" source="FZD" target="t1">
+  </arc>
+  <arc id="aa7" source="t4" target="Controller">
+  </arc>
+  <arc id="aa8" source="t8" target="CKI">
+  </arc>
+  <arc id="aa9" source="t4" target="AXIN">
+  </arc>
+  <arc id="aa10" source="DC" target="t6">
+  </arc>
+  <arc id="aa11" source="t6" target="DCCTNNB1">
+  </arc>
+  <arc id="aa12" source="t5" target="DC">
+  </arc>
+  <arc id="aa13" source="AXIN" target="t3">
+  </arc>
+  <arc id="aa14" source="DCCTNNB1" target="t7">
+  </arc>
+  <arc id="aa15" source="WNT" target="t1">
+  </arc>
+  <arc id="aa16" source="t8" target="GSK3">
+  </arc>
+  <arc id="aa17" source="t1" target="WNTFZDLRP">
+  </arc>
+  <arc id="aa18" source="t9" target="ctnnb1">
+  </arc>
+  <arc id="aa19" source="WNTFZDLRPDVL" target="t3">
+  </arc>
+  <arc id="aa20" source="t4" target="WNTFZDLRPDVL">
+  </arc>
+  <arc id="aa21" source="t13" target="CADCAT_complex">
+  </arc>
+  <arc id="aa22" source="t9" target="CTNNB1">
+  </arc>
+  <arc id="aa23" source="t12" target="CADHERIN">
+  </arc>
+  <arc id="aa24" source="t15" target="nCTNNB1">
+  </arc>
+  <arc id="aa25" source="nCTNNB1" target="t14">
+  </arc>
+  <arc id="aa26" source="LRP" target="t1">
+  </arc>
+  <arc id="aa27" source="t14" target="CTNNB1">
+  </arc>
+  <arc id="aa28" source="CTNNB1" target="t15">
+  </arc>
+  <arc id="aa29" source="t7" target="DC">
+  </arc>
+  <arc id="aa30" source="DCCTNNB1" target="t8">
+  </arc>
+  <arc id="aa31" source="t2" target="WNTFZDLRPDVL">
+  </arc>
+  <arc id="aa32" source="t8" target="AXIN">
+  </arc>
+  <arc id="aa33" source="CKI" target="t5">
+  </arc>
+  <arc id="aa34" source="t8" target="APC">
+  </arc>
+  <arc id="aa35" source="APC" target="t5">
+  </arc>
+  <arc id="aa36" source="WNTFZDLRP" target="t2">
+  </arc>
+  <arc id="aa37" source="ctnnb1" target="t9">
+  </arc>
+  <arc id="aa38" source="t12" target="CTNNB1_Y142">
+  </arc>
+  <arc id="aa39" source="CTNNB1_Y142" target="t16">
+  </arc>
+  <arc id="aa40" source="t16" target="nCTNNB1_Y142">
+  </arc>
+  <arc id="aa41" source="CADHERIN" target="t13">
+  </arc>
+  <arc id="aa42" source="t19" target="CTNNB1_Y142">
+  </arc>
+  <arc id="aa43" source="nCTNNB1_Y142" target="t19">
+  </arc>
+  <arc id="aa44" source="US28" target="t22">
+  </arc>
+  <arc id="aa45" source="t22" target="aNFkB">
+  </arc>
+  <arc id="aa46" source="aNFkB" target="t20">
+  </arc>
+  <arc id="aa47" source="t20" target="HGF">
+  </arc>
+  <arc id="aa48" source="DVL" target="t2">
+  </arc>
+  <arc id="aa49" source="HGF" target="t21">
+  </arc>
+  <arc id="aa50" source="MET" target="t21">
+  </arc>
+  <arc id="aa51" source="t21" target="HGFMET">
+  </arc>
+  <arc id="aa52" source="CTNNAB_complex" target="t13">
+  </arc>
+  <arc id="aa53" source="t25" target="CTNNAB_complex">
+  </arc>
+  <arc id="aa54" source="CTNNB1" target="t25">
+  </arc>
+  <arc id="aa55" source="CTNNA" target="t25">
+  </arc>
+  <arc id="aa56" source="t12" target="CTNNA">
+  </arc>
+  <arc id="aa57" source="iNFkB" target="t22">
+  </arc>
+  <arc id="aa58" source="hgf" target="t20">
+  </arc>
+  <arc id="aa59" source="RC" target="t4">
+  </arc>
+  <arc id="aa60" source="t20" target="hgf">
+  </arc>
+  <arc id="aa61" source="HGFMET" target="t28">
+  </arc>
+  <arc id="aa62" source="CADCAT_complex" target="t28">
+  </arc>
+  <arc id="aa63" source="t28" target="METCADCAT">
+  </arc>
+  <arc id="aa64" source="METCADCAT" target="t12">
+  </arc>
+  <arc id="aa65" source="t12" target="HGFMET">
+  </arc>
+  <arc id="aa66" source="HGFMET" target="t29">
+  </arc>
+  <arc id="aa67" source="t29" target="HGF">
+  </arc>
+  <arc id="aa68" source="t29" target="MET">
+  </arc>
+  <arc id="aa69" source="BCL9" target="t10">
+  </arc>
+  <arc id="aa70" source="CTNNB1" target="t6">
+  </arc>
+  <arc id="aa71" source="nCTNNB1" target="t10">
+  </arc>
+  <arc id="aa72" source="TCFLEF" target="t10">
+  </arc>
+  <arc id="aa73" source="t10" target="TC">
+  </arc>
+  <arc id="aa74" source="TC" target="t11">
+  </arc>
+  <arc id="aa75" source="nCTNNB1_Y142" target="t17">
+  </arc>
+  <arc id="aa76" source="BCL9" target="t17">
+  </arc>
+  <arc id="aa77" source="TCFLEF" target="t17">
+  </arc>
+  <arc id="aa78" source="t17" target="TC_Y142">
+  </arc>
+  <arc id="aa79" source="TC_Y142" target="t18">
+  </arc>
+  <arc id="aa80" source="t18" target="TC_Y142">
+  </arc>
+  <arc id="aa81" source="GSK3" target="t5">
+  </arc>
+  <arc id="aa82" source="TC_Y142" target="t23">
+  </arc>
+  <arc id="aa83" source="t23" target="nCTNNB1_Y142">
+  </arc>
+  <arc id="aa84" source="t23" target="BCL9">
+  </arc>
+  <arc id="aa85" source="t23" target="TCFLEF">
+  </arc>
+  <arc id="aa86" source="t18" target="reporter">
+  </arc>
+  <arc id="aa87" source="t11" target="reporter">
+  </arc>
+  <arc id="aa88" source="TC" target="t24">
+  </arc>
+  <arc id="aa89" source="t24" target="nCTNNB1">
+  </arc>
+  <arc id="aa90" source="t24" target="BCL9">
+  </arc>
+  <arc id="aa91" source="t24" target="TCFLEF">
+  </arc>
+  <arc id="aa92" source="AXIN" target="t5">
+  </arc>
+  <arc id="aa93" source="CTNNB1_Y142" target="t26">
+  </arc>
+  <arc id="aa94" source="t26" target="CTNNB1">
+  </arc>
+  <arc id="aa95" source="phosphatase" target="t26">
+  </arc>
+  <arc id="aa96" source="t26" target="phosphatase">
+  </arc>
+  <arc id="aa97" source="CTNNB1_Y142" target="t27">
+  </arc>
+  <arc id="aa98" source="t27" target="DCCTNNB1">
+  </arc>
+  <arc id="aa99" source="controller_Y142degradation" target="t27">
+  </arc>
+  <arc id="aa100" source="DC" target="t27">
+  </arc>
+  <arc id="aa101" source="controller_AJ" target="t25">
+  </arc>
+  <arc id="aa102" source="t25" target="controller_AJ">
+  </arc>
+ </page>
+ </net>
+</pnml>
