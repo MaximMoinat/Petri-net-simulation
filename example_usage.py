@@ -3,7 +3,7 @@
 Example of Petri Net Simulator usage
 """
 
-import PetriNetSimulator
+from PetriNetSimulator import PetriNetSimulator
 
 # Initiate object
 pnSim = PetriNetSimulator()
