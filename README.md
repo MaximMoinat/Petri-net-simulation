@@ -21,7 +21,7 @@ pnSim.parse_pnml_input_file( '<your_model.pnml>' )
 ## Plotting functions
 
 - `pnSim.plotTimeSeries( places2plot [,doPlotSum, label_sum, label_suffix, colors, plotFigure, n_trajectories] )`
-  Plots the time series of a or multiple simulations.
+  Plots the time series of one or multiple simulations at each step.
   - `places2plot` -- a list of strings containing the names of the places to be plotted.
   - `doPlotSum` -- if `True`, only the sums of the tokens of the places specified in `places2plot` are plotted. (default `False`)
   - `label_sum` -- a string with a custom label for the sum. (default `None`)
