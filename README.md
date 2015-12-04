@@ -5,7 +5,7 @@
 For a simple example of how to use the Petri net simulation script, see `example_usage.py`.
 
 ## Initiate object
-`pnSim = Petrinetsimulation()`
+`pnSim = PetriNetSimulator()`
 
 Below an overview of the available functions in the Petrinetsimulation class.
 
