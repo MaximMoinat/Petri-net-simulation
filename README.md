@@ -2,12 +2,17 @@
 
 ***
 
-For a simple example of how to use the Petri net simulation script, see `example_usage.py`.
+For a simple example, see `example_usage.py`.
 
-## Initiate object
-`pnSim = PetriNetSimulator()`
+## Initiate object and load model
+```
+pnSim = PetriNetSimulator()
+pnSim.parse_pnml_input_file( '<your_model.pnml>' )
+```
 
-Below an overview of the available functions in the Petrinetsimulation class.
+## Simulate
+`pnSim.multi_sim(num_sim, num_steps)`
+
 
 ## Plotting functions
 
