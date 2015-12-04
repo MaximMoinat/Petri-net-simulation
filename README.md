@@ -1,10 +1,12 @@
 # Petri-net-simulation
 
-Class for simulating [Petri net](https://en.wikipedia.org/wiki/Petri_net) models using maximal parallelism execution "execute greedily as many transitions as possible in one step" [[1]](http://www.cs.vu.nl/~wanf/pubs/fmsb08.pdf). The class includes plotting and analysis methods for quick visualisation of the simulation result. Model has to be supplied as a pnml file.
+Class for simulating [Petri net](https://en.wikipedia.org/wiki/Petri_net) models using maximal parallelism execution ("execute greedily as many transitions as possible in one step" [[1]](http://www.cs.vu.nl/~wanf/pubs/fmsb08.pdf)). The class includes plotting and analysis methods for quick visualisation of the simulation result. The Petri net model has to be supplied as a pnml file.
+
+This script was developed at the VU University Amsterdam.
 
 ***
 
-For a simple example, see `example_usage.py`.
+For a simple example, see `example_usage.py`. This example uses a extensive Petri net model of the Wnt/beta-catenin pathway (`example_model.pnml`).
 
 ## Initiate object and load model
 ```
