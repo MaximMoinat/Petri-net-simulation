@@ -1,5 +1,7 @@
 # Petri-net-simulation
 
+Class for simulating [Petri net](https://en.wikipedia.org/wiki/Petri_net) models using maximal parallelism execution "execute greedily as many transitions as possible in one step" [[1]](http://www.cs.vu.nl/~wanf/pubs/fmsb08.pdf). The class includes plotting and analysis methods for quick visualisation of the simulation result. Model has to be supplied as a pnml file.
+
 ***
 
 For a simple example, see `example_usage.py`.
