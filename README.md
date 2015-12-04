@@ -30,7 +30,7 @@ pnSim.parse_pnml_input_file( '<your_model.pnml>' )
   - `plotFigure` -- integer specifying in which plotnumber to plot. Used for plotting multiple times in the same window. (default `None` = new window)
   - `n_trajectories` -- integer specifying how many trajectories are plotted, if multiple simulations have been simulated.  (default `1`)
 - `pnSim.plotAverageTimeSeries( places2plot [,doPlotSum, label_sum, label_suffix, colors, plotFigure] )`
-  Plots the average number of tokens against the step number.
+  Plots the average number of tokens at each step.
   - *Parameters are the same as `.plotTimeSeries()`, excluding the `n_trajectories` parameter*
 
 
