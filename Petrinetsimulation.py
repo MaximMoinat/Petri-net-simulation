@@ -2,16 +2,12 @@
 #Script to simulate Petri nets
 
 import sys
-import argparse
 from xml.dom import minidom
-#from XMLparse import parse_pnml_input_file
 import copy
 from copy import deepcopy
 import random
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_pdf import PdfPages
-from operator import add
 from Progress_bar import Progress_bar
 
 class PetriNetSimulator:
@@ -349,42 +345,3 @@ class PetriNetSimulator:
         places = [ "%s:%s" % (place, self.output[place][-1][i]) for place in places2print ]
         #places = {k:v[i] for k,v in output_last_sim.iteritems()}
         print >> out, "State:", places
-        
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='This is a Petri net simulation tool')
-    parser.add_argument('-i','--infile', help='pnml input file of the model', required=False)
-    args = vars(parser.parse_args())
-    
-    pnSim = PetriNetSimulator()
-    
-    if not args['infile']: #default model
-        transitions = ["t1","t2","t3","t4","t5","t6","t7","t8","t9","t10","t11"]
-        places = {"WNT": 5, "FZD": 5, "LRP": 5, "WNTFZDLRP": 0, "DVL": 5, "WNTFZDLRPDVL": 0, "RC": 0, "Controller": 1, "AXIN": 5, "APC": 5, "CK1": 5, "GSK3": 5, "DC": 0, "DCCTNNB1": 0, "CTNNB1": 0, "ctnnb1": 1, "TCFLEF": 1, "TCFLEFCTNNB1": 0, "axin2":0}
-        arc_weights_in = {"t1": {"WNT": 1, "FZD": 1,  "LRP": 1}, 
-        "t2": {"WNTFZDLRP": 1, "DVL": 1}, 
-        "t3": {"WNTFZDLRPDVL": 1, "AXIN": 1}, 
-        "t4": {"RC": 0.1, "Controller": 1}, 
-        "t5": {"AXIN": 1, "APC": 1, "CK1": 1, "GSK3": 1}, 
-        "t6": {"CTNNB1": 1, "DC": 1}, 
-        "t7": {"DCCTNNB1": 1}, 
-        "t8": {"DCCTNNB1": 1}, 
-        "t9": {"ctnnb1": 1}, 
-        "t10": {"CTNNB1": 3, "TCFLEF": 1}, 
-        "t11": {"TCFLEFCTNNB1": 1, "axin2":1}}
-        arc_weights_out = {"t1": {"WNTFZDLRP": 1}, 
-        "t2": {"WNTFZDLRPDVL": 1}, 
-        "t3": {"RC": 1}, 
-        "t4": {"WNTFZDLRPDVL": 0.1, "AXIN": 0.1, "Controller": 1}, 
-        "t5": {"DC": 1}, 
-        "t6": {"DCCTNNB1": 1},
-        "t7": {"DC": 1}, 
-        "t8": {"AXIN": 1, "APC": 1, "CK1": 1, "GSK3": 1},  
-        "t9": {"ctnnb1": 1, "CTNNB1":1}, 
-        "t10": {"CTNNB1": 2, "TCFLEFCTNNB1": 1}, 
-        "t11": {"CTNNB1": 1, "TCFLEF": 1, "AXIN": 1, "axin2": 1}}
-        pnSim.set_petri_net_model( transitions, places, arc_weights_in, arc_weights_out ) #MM 24-08-2015
-    else:
-        pnSim.parse_pnml_input_file( args['infile'] ) #parse model from pnml file
-
-    pnSim.multi_sim(num_sim = 5, num_steps = 100)
-    pnSim.plotTimeSeries('CTNNB1',n_trajectories = 10)
