@@ -6,7 +6,7 @@ This script was developed at the VU University Amsterdam.
 
 ***
 
-For a simple example, see `example_usage.py`. This example uses a extensive Petri net model of the Wnt/beta-catenin pathway (`example_model.pnml`).
+For a simple example, see `example_usage.py`. This example uses a extensive Petri net model of the Wnt/beta-catenin pathway (`wnt_model.pnml`).
 
 ## Initiate object and load model
 ```
