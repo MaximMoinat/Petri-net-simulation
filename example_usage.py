@@ -9,7 +9,7 @@ from PetriNetSimulator import PetriNetSimulator
 pnSim = PetriNetSimulator()
 
 # Load the model from .pnml
-pnSim.parse_pnml_input_file( 'example_model.pnml' )
+pnSim.parse_pnml_input_file( 'wnt_model.pnml' )
 
 # Execute 10 simulations of 100 steps (maximal parallel execution)
 pnSim.multi_sim(num_sim = 10, num_steps = 100)
